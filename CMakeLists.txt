@@ -35,7 +35,6 @@ file(COPY ${ASSETS} DESTINATION ${CMAKE_BINARY_DIR})
 
 #本工程主程序所有cpp文件编译链接，生成exe
 add_executable(GraphicsRenderer "main.cpp" "glad.c")
-add_executable(main2 "main2.cpp")
 
 #将funcs.lib链接入softRender
 target_link_libraries(GraphicsRenderer myFuncs)
